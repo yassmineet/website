@@ -1,0 +1,350 @@
+.gallery {
+    padding: 120px 0;
+    position: relative;
+    background: var(--light);
+    overflow: hidden;
+}
+
+/* Subtle Drifting Background for Gallery to tie into Experience Section */
+.gallery::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(201, 139, 155, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+    animation: slowDrift 25s infinite alternate ease-in-out;
+}
+
+@keyframes slowDrift {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(100px, 100px);
+    }
+}
+
+.gallery .container {
+    position: relative;
+    z-index: 10;
+}
+
+.gallery .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: var(--primary-dark);
+    position: relative;
+    font-weight: 700;
+}
+
+.gallery .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+/* Elegant Glowing Pill Filters */
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(201, 139, 155, 0.3);
+    border-radius: 30px;
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.1s linear;
+    /* Fast transform for magnetic JS effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(201, 139, 155, 0.3);
+}
+
+/* Modern Masonry Layout (Pinterest Style) */
+.gallery-grid {
+    column-count: 3;
+    column-gap: 25px;
+    width: 100%;
+}
+
+/* Extreme "Focus Mode" - Dims and blurs images you aren't hovering */
+.gallery-grid:hover .gallery-item:not(:hover) {
+    opacity: 0.3;
+    filter: blur(4px) grayscale(60%);
+    transform: scale(0.96);
+}
+
+.gallery-item {
+    break-inside: avoid-column;
+    /* Prevent items cutting across columns */
+    margin-bottom: 25px;
+    border-radius: 20px;
+    /* Soft, feminine rounded corners */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--white);
+    /* Remove fixed height to allow masonry dynamic sizing */
+    height: auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    /* Display block prevents bottom margin gap in masonry */
+    display: block;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(201, 139, 155, 0.2);
+    z-index: 20;
+}
+
+/* Elegant Sparkle that dances on hover */
+.gallery-item::after {
+    content: '✨';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 30;
+    pointer-events: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+    transform: scale(1.2) rotate(0);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+/* Stunning Glassmorphism Slide-Up Overlay */
+.gallery-overlay {
+    position: absolute;
+    bottom: -10px;
+    /* Start slightly below */
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(0);
+}
+
+.gallery-category {
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+}
+
+.gallery-item:hover .gallery-category {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-title {
+    color: var(--dark);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+}
+
+.gallery-item:hover .gallery-title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Filtering Animations */
+.gallery-item.hide {
+    opacity: 0 !important;
+    transform: scale(0.8) translateY(30px) !important;
+    pointer-events: none;
+}
+
+.gallery-item.hidden {
+    display: none !important;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--primary);
+}
+
+.modal-caption {
+    color: var(--white);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Mobile 'Voir Plus' Load More Container */
+#loadMoreGallery {
+    margin-top: 40px;
+}
+
+#loadMoreGallery .btn {
+    padding: 12px 35px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    color: var(--primary-dark);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+#loadMoreGallery .btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: 0 10px 20px rgba(201, 139, 155, 0.3);
+}
+
+/* Responsive Layout (Masonry Columns) */
+@media (max-width: 900px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        column-count: 1;
+    }
+
+    .gallery-filters {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
+    .gallery .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ========================================================================= */
+/* RTL Layout Support (Arabic)                                               */
+/* ========================================================================= */
+.rtl-layout .gallery-item::after {
+    left: 20px;
+    right: auto;
+}
+
+.rtl-layout .modal-close {
+    left: 0;
+    right: auto;
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toumia Yasmine - Esthéticienne Cosméticienne</title>
+    <link rel="icon" type="image/x-icon" href="/image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Added Tajawal for Arabic font, kept existing fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_galerie.css">
+
+    <style></style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class="fas fa-spa"></i> Toumia Yasmine</a>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" data-i18n="nav-about">À propos</a></li>
+                <li><a href="#services" data-i18n="nav-services">Services</a></li>
+                <li><a href="#experience" data-i18n="nav-exp">Expérience</a></li>
+                <li><a href="#gallery" data-i18n="nav-gallery">Galerie</a></li>
+                <li><a href="#testimonials" data-i18n="nav-reviews">Avis</a></li>
+                <li><a href="#reservation" data-i18n="nav-booking">Réservation</a></li>
+                <li class="lang-switcher">
+                    <div class="lang-selector">
+                        <a href="#" class="lang-btn" data-lang="ar">AR</a>
+                        <a href="#" class="lang-btn active" data-lang="fr">FR</a>
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-up">
+        <!-- SVG Blob Background elements -->
+        <div class="hero-bg-blob"></div>
+        <div class="hero-bg-blob-2"></div>
+
+        <!-- Decorative Elements -->
+        <div class="sparkle sparkle-1"><i class="fas fa-star-of-life"></i></div>
+        <div class="sparkle sparkle-2"><i class="fas fa-sparkles"></i></div>
+        <div class="sparkle sparkle-3"><i class="fas fa-star-of-life"></i></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero-badge">✨ التميز في التجميل</div>
+                <h1 data-i18n="hero-h1-1">أبرزي <br><span class="highlight-text" data-i18n="hero-h1-highlight">جمالك
+                        الطبيعي</span></h1>
+                <p data-i18n="hero-p">نعتني بجمالك من خلال عناية بالوجه مخصصة، إطلالات مكياج مبهرة، وعناية دقيقة
+                    بالأظافر.</p>
+
+                <div class="hero-actions">
+                    <a href="#reservation" class="btn btn-glow" data-i18n="hero-btn">احجزي موعدك <i
+                            class="fas fa-arrow-left"></i></a>
+                    <div class="hero-stats">
+                        <div class="avatars">
+                            <img src="image/galerie/soin/soin1.jpg" alt="Client">
+                            <img src="image/galerie/cils/cils1.jpg" alt="Client">
+                            <img src="image/galerie/onglerie/onglerie2.jpeg" alt="Client">
+                        </div>
+                        <span data-i18n="hero-stats">+500 حريفة<br>راضية</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-image-frame">
+                    <img src="image/about_img.jpg" alt="Soins esthétiques">
+                </div>
+                <!-- Floating Info Card -->
+                <div class="floating-info-card">
+                    <div class="icon-box"><i class="fas fa-award"></i></div>
+                    <div class="info-text">
+                        <strong data-i18n="hero-info-strong">منتجات فاخرة</strong>
+                        <span data-i18n="hero-info-span">جودة 100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-up" id="about">
+        <!-- SVG Blob Background element -->
+        <div class="about-bg-blob"></div>
+        <div class="sparkle sparkle-4"><i class="fas fa-star-of-life"></i></div>
+        <div class="container">
+            <h2 class="section-title" data-i18n="about-title">من أنا</h2>
+
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="image/about_img.jpg" alt="Toumia Yasmine">
+                        <!-- Soft decorative frame for image -->
+                        <div class="img-frame"></div>
+                    </div>
+                    <!-- Floating Experience Badge -->
+                    <div class="experience-badge">
+                        <span class="years" data-i18n="about-exp-years">5+</span>
+                        <span class="text" data-i18n="about-exp-text">سنوات<br>من الخبرة</span>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3 class="about-subtitle" data-i18n="about-subtitle">خبيرة تجميلك</h3>
+                    <h2 data-i18n="about-h2">ياسمين تومية: خبيرة تجميل معتمدة</h2>
+                    <p data-i18n="about-p1">كخبيرة تجميل، أعمل بشغف لإبراز جمالك الطبيعي عبر العناية بالوجه، إزالة
+                        الشعر، المكياج وتجميل الأظافر، مع توفير الراحة والنصائح المخصصة.</p>
+                    <p data-i18n="about-p2">منهجي يعتمد على الاستماع لاحتياجاتك واستخدام منتجات عالية الجودة لتحقيق
+                        نتائج استثنائية.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                            <span data-i18n="about-feat-1">منتجات راقية</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                            <span data-i18n="about-feat-2">عناية مخصصة</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                            <span data-i18n="about-feat-3">خبرة معتمدة</span>
+                        </div>
+                    </div>
+
+                    <div class="signature">
+                        Toumia Yasmine
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-up" id="services">
+        <!-- SVG Blob Background element -->
+        <div class="services-bg-blob"></div>
+        <div class="sparkle sparkle-3" style="top:10%; left:85%;"><i class="fas fa-star-of-life"></i></div>
+        <div class="container">
+            <h2 class="section-title" data-i18n="services-title">خدماتنا</h2>
+            <p data-i18n="services-p"
+                style="text-align: center; margin-bottom: 50px; color: var(--gray); max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+                اكتشفي خدماتنا الراقية، المصممة خصيصاً لإبراز جمالك ومنحك لحظة من الاسترخاء.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-badge-premium"><span data-i18n="srv-badge-1">مميز</span></div>
+                    <div class="service-image">
+                        <img src="image/galerie/onglerie/onglerie1.jpeg" alt="Onglerie">
+                        <div class="service-icon-float">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="srv-title-1">عناية بالأظافر</h3>
+                        <p data-i18n="srv-desc-1">عناية كاملة ليديك وأظافرك، تشمل المانيكير، طلاء الأظافر الكلاسيكي أو
+                            شبه الدائم، بالإضافة إلى علاجات مغذية.</p>
+                        <a href="https://wa.me/+21693500395" class="service-link" target="_blank"
+                            data-i18n="srv-btn">احجزي <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card service-card-center">
+                    <div class="service-badge-premium"><span data-i18n="srv-badge-2">حصرية</span></div>
+                    <div class="service-image">
+                        <img src="image/galerie/soin/soin1.jpg" alt="Soins du visage">
+                        <div class="service-icon-float">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="srv-title-2">عناية بالوجه</h3>
+                        <p data-i18n="srv-desc-2">عناية مخصصة حسب نوع بشرتك لتنظيفها وترطيبها وتجديدها باستخدام منتجات
+                            فاخرة.</p>
+                        <a href="https://wa.me/+21693500395" class="service-link" target="_blank"
+                            data-i18n="srv-btn">احجزي <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-badge-premium"><span data-i18n="srv-badge-3">فاخرة</span></div>
+                    <div class="service-image">
+                        <img src="image/galerie/cils/cils1.jpg" alt="Cil à cil">
+                        <div class="service-icon-float">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="srv-title-3">تركيب الرموش</h3>
+                        <p data-i18n="srv-desc-3">تركيب رموش باحترافية لإطلالة عيون ساحرة وطبيعية تبرز جمالك كل يوم أو
+                            في المناسبات الخاصة.</p>
+                        <a href="https://wa.me/+21693500395" class="service-link" target="_blank"
+                            data-i18n="srv-btn">احجزي <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section (Restored & Enhanced) -->
+    <section class="experience fade-up" id="experience">
+        <!-- Smooth Drifting Background Blobs -->
+        <div class="smooth-blob blob-1"></div>
+        <div class="smooth-blob blob-2"></div>
+
+        <div class="container">
+            <h2 class="section-title" data-i18n="exp-title">خبرتي</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-highlight"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2 class="card-title" data-i18n="exp-card1-h2">+5 سنوات خبرة</h2>
+                    <p class="card-content" data-i18n="exp-card1-p">بفضل تجربة غنية في مجال التجميل، أتقن تمامًا العناية
+                        بالوجه، إبراز جمال العينين، وتجميل الأظافر.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-highlight"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h2 class="card-title" data-i18n="exp-card2-h2">جودة عالية</h2>
+                    <p class="card-content" data-i18n="exp-card2-p">أستخدم حصرياً منتجات عالية الجودة، مختارة بعناية
+                        ومناسبة لكل أنواع البشرة لضمان عناية فعالة.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-highlight"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h2 class="card-title" data-i18n="exp-card3-h2">الشهادات</h2>
+                    <ul class="certificate-list">
+                        <li class="certificate-item"><i class="fas fa-award"></i> <span data-i18n="exp-cert-1">شهادة في
+                                تجميل الأظافر</span></li>
+                        <li class="certificate-item"><i class="fas fa-award"></i> <span data-i18n="exp-cert-2">شهادة في
+                                تركيب الرموش</span></li>
+                        <li class="certificate-item"><i class="fas fa-award"></i> <span data-i18n="exp-cert-3">شهادة في
+                                العناية بالوجه</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-up" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testi-title">آراء الحريفات</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--gray);" data-i18n="testi-p">رأيهن في خدمات
+                التجميل لدينا</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text" data-i18n="testi-1">"لحظة من السعادة الخالصة! ياسمين محترفة جداً، لطيفة
+                        وتستمع إليك. أعادت العناية بالوجه إشراقة بشرتي. أنصح بها بشدة."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text" data-i18n="testi-2">"لم تكن أظافري بهذه الجمال أبداً. طلاء الأظافر شبه
+                        الدائم ثابت والنتيجة طبيعية جداً. الصالون رائع ويبعث على الاسترخاء."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Élodie D.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text" data-i18n="testi-3">"قمت بتركيب رموش لمناسبة زفافي والنتيجة كانت
+                        استثنائية، تماماً كما أردت: رقيقة وأنيقة. شكراً ياسمين على سعة صدرك!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Amira K.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation fade-up" id="reservation">
+        <div class="container">
+            <h2 data-i18n="res-title">مستعدة لإبراز جمالك؟</h2>
+            <p data-i18n="res-p">احجزي استشارتك أو جلسة التجميل الآن لتجربة تجميل وراحة استثنائية في صالوننا.</p>
+            <div class="reservation-actions">
+                <a href="https://wa.me/+21693500395" class="btn btn-glow" target="_blank" data-i18n="res-btn-1"><i
+                        class="fab fa-whatsapp"></i> تواصلي معنا عبر واتساب</a>
+                <a href="#services" class="btn btn-outline" style="margin-left: 15px;" data-i18n="res-btn-2">تصفحي قائمة
+                    الخدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery fade-up" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gal-title">نتائج الحريفات</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--gray);" data-i18n="gal-p">اكتشفي التغييرات
+                التي صنعناها لحريفاتنا</p>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="gal-flt-all">الكل</button>
+                <button class="filter-btn" data-filter="onglerie" data-i18n="gal-flt-onglerie">الأظافر</button>
+                <button class="filter-btn" data-filter="soins" data-i18n="gal-flt-soins">الوجه</button>
+                <button class="filter-btn" data-filter="cils" data-i18n="gal-flt-cils">الرموش</button>
+                <button class="filter-btn" data-filter="maquillage" data-i18n="gal-flt-maquillage">المكياج</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Onglerie -->
+                <div class="gallery-item" data-category="onglerie">
+                    <img src="image/galerie/onglerie/onglerie1.jpeg" alt="Onglerie résultat">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-onglerie">الأظافر</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-onglerie-1">مانيكير كامل</h3>
+                    </div>
+                </div>
+
+                <!-- Soins du visage -->
+                <div class="gallery-item" data-category="soins">
+                    <img src="image/galerie/soin/soin1.jpg" alt="Soin du visage résultat">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-soins">الوجه</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-soins-1">عناية بالترطيب</h3>
+                    </div>
+                </div>
+
+                <!-- Cils à cil -->
+                <div class="gallery-item" data-category="cils">
+                    <img src="image/galerie/cils/cils1.jpg" alt="Cils à cil résultat">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-cils">الرموش</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-cils-1">تركيب رموش طبيعية</h3>
+                    </div>
+                </div>
+
+                <!-- Maquillage -->
+                <div class="gallery-item" data-category="maquillage">
+                    <img src="image/galerie/maquillage/maquillage1.jpg" alt="Maquillage résultat">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-maq">المكياج</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-maq-1">مكياج سهرة</h3>
+                    </div>
+                </div>
+
+                <!-- Onglerie 2 -->
+                <div class="gallery-item" data-category="onglerie">
+                    <img src="image/galerie/onglerie/onglerie2.jpeg" alt="Onglerie résultat 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-onglerie">الأظافر</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-onglerie-2">طلاء شبه دائم</h3>
+                    </div>
+                </div>
+
+                <!-- Soins du visage 2 -->
+                <div class="gallery-item" data-category="soins">
+                    <img src="image/galerie/soin/soin2.jpg" alt="Soin du visage résultat 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-soins">الوجه</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-soins-2">عناية مضادة للتجاعيد</h3>
+                    </div>
+                </div>
+
+                <!-- Cils à cil 2 -->
+                <div class="gallery-item" data-category="cils">
+                    <img src="image/galerie/cils/cils2.jpg" alt="Cils à cil résultat 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-cils">الرموش</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-cils-2">حجم روسي</h3>
+                    </div>
+                </div>
+
+                <!-- Maquillage 2 -->
+                <div class="gallery-item" data-category="maquillage">
+                    <img src="image/galerie/maquillage/maquillage1.jpg" alt="Maquillage résultat 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category" data-i18n="gal-item-maq">المكياج</span>
+                        <h3 class="gallery-title" data-i18n="gal-item-maq-2">مكياج زفاف</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-load-more" id="loadMoreGallery"
+                style="display: none; text-align: center; margin-top: 40px;">
+                <button class="btn btn-outline" data-i18n="gal-btn-more">المزيد</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="script/script_galerie.js"></script>
+
+    <!-- Instagram Section -->
+    <section class="instagram fade-up" id="instagram">
+        <div class="container">
+            <h2 class="section-title" data-i18n="insta-title">تابعيني على إنستغرام</h2>
+
+            <div class="instagram-feed">
+                <div class="instagram-item">
+                    <a href="https://www.instagram.com/p/DNJxkeLo5Um/" target="_blank" rel="noopener noreferrer"><img
+                            src="image/insta/img1.jpg" alt="Instagram Post"></a>
+                </div>
+                <div class="instagram-item">
+                    <a href="https://www.instagram.com/p/DNyN4ZHWIkp/" target="_blank" rel="noopener noreferrer"><img
+                            src="image/insta/img2.jpg" alt="Instagram Post"></a>
+                </div>
+                <div class="instagram-item">
+                    <a href="https://www.instagram.com/p/DNJtgekICQB/" target="_blank" rel="noopener noreferrer"><img
+                            src="image/insta/img3.jpg" alt="Instagram Post"></a>
+                </div>
+                <div class="instagram-item">
+                    <a href="https://www.instagram.com/p/DAd53-Ro5qQ/" target="_blank" rel="noopener noreferrer"><img
+                            src="image/insta/img4.jpg" alt="Instagram Post"></a>
+                </div>
+            </div>
+
+            <div class="instagram-handle">
+                <a href="https://www.instagram.com/yass_beauty_lounge/" target="_blank">@yass_beauty_lounge</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Toumia Yasmine</h3>
+                    <p data-i18n="footer-p1">خبيرة تجميل شغوفة بفن إبراز الجمال الطبيعي.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yass.mineett/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer-h3-srv">الخدمات</h3>
+                    <ul>
+                        <li><a href="#services" data-i18n="gal-flt-soins">الوجه</a></li>
+                        <li><a href="#services" data-i18n="gal-flt-onglerie">الأظافر</a></li>
+                        <li><a href="#services" data-i18n="gal-flt-maquillage">المكياج</a></li>
+                        <li><a href="#services" data-i18n="gal-flt-cils">الرموش</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer-h3-contact">الإتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rue sidi abed dayem ,Bekalta</p>
+                    <p><i class="fas fa-phone"></i> (+216) 93 500 395</p>
+                    <p><i class="fas fa-envelope"></i> contact@toumiayasmine.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-i18n="footer-h3-hours">أوقات العمل</h3>
+                    <p data-i18n="footer-p-h1">الاثنين-الجمعة: 9ص-7م</p>
+                    <p data-i18n="footer-p-h2">السبت: 10ص-6م</p>
+                    <p data-i18n="footer-p-h3">الأحد: مغلق</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> <span data-i18n="footer-copy">ياسمين تومية - خبيرة تجميل. جميع
+                        الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Booking CTA -->
+    <a href="https://wa.me/+21693500395" class="floating-cta" target="_blank" aria-label="Réserver sur WhatsApp">
+        <div class="floating-cta-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="floating-cta-text" data-i18n="float-cta">حجز</span>
+    </a>
+
+    <script src="script/i18n.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
