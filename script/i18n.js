@@ -310,8 +310,8 @@ function changeLanguage(lang) {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Default to 'ar' if no preference is explicitly set to something else
-    const savedLang = localStorage.getItem('preferredLanguage') || 'ar';
+    // Default to 'fr' if no preference is explicitly set to something else
+    const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
     changeLanguage(savedLang);
 
     // Attach event listeners to language switcher
