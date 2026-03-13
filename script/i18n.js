@@ -83,7 +83,13 @@ const translations = {
         "footer-p-h2": "Samedi: 10h-18h",
         "footer-p-h3": "Dimanche: Fermé",
         "footer-copy": "Toumia Yasmine - Esthéticienne Cosméticienne. Tous droits réservés.",
-        "float-cta": "Réserver"
+        "float-cta": "Réserver",
+        "certif-title": "Mes Certificats",
+        "certif-p": "Découvrez les diplômes et certifications qui attestent de mon expertise.",
+        "salon-title": "L'Institut le plus Instgrammable",
+        "salon-p": "Plongez dans un décor de rêve au cœur de Bekalta. Un sanctuaire de beauté où chaque recoin est conçu pour émerveiller. Venez vivre l'expérience, repartez avec des étoiles plein les yeux... et des photos parfaites !",
+        "insta-spot": "Spot Photo",
+        "salon-quote": "\"Le décor est tellement beau que tu voudras absolument prendre une photo !\""
     },
     en: {
         "nav-about": "About",
@@ -169,7 +175,13 @@ const translations = {
         "footer-p-h2": "Saturday: 10am-6pm",
         "footer-p-h3": "Sunday: Closed",
         "footer-copy": "Toumia Yasmine - Certified Esthetician. All rights reserved.",
-        "float-cta": "Book"
+        "float-cta": "Book",
+        "certif-title": "My Certificates",
+        "certif-p": "Discover the diplomas and certifications that attest to my expertise.",
+        "salon-title": "The Most Instagrammable Spot",
+        "salon-p": "Dive into a dream setting in the heart of Bekalta. A beauty sanctuary where every corner is designed to amaze. Come live the experience, leave with stars in your eyes... and the perfect photos!",
+        "insta-spot": "Photo Spot",
+        "salon-quote": "\"The decor is so beautiful you'll absolutely want to take a picture!\""
     },
     ar: {
         "nav-about": "علينا",
@@ -255,7 +267,13 @@ const translations = {
         "footer-p-h2": "السبت: 10ص - 6م",
         "footer-p-h3": "الأحد: مسكرين",
         "footer-copy": "ياسمين تومية - خبيرة تجميل. جميع الحقوق محفوظة.",
-        "float-cta": "احجزي"
+        "float-cta": "احجزي",
+        "certif-title": "شهاداتي",
+        "certif-p": "اكتشفي الشهادات اللي تثبت خبرتي و احترافيتي.",
+        "salon-title": "أكثر صالون إنستغرامابل",
+        "salon-p": "ديكور خيالي في قلب البقالطة، صالون تجميل كل ركن فيه معمول باش يبهرك. إيجا عيشي التجربة، و روحي و إنتي فرحانة... و بتصاور تهبل!",
+        "insta-spot": "بلاصة تصاور",
+        "salon-quote": "\"الديكور مزيان برشة لدرجة إنك باش تحبي تتصوري بالسيف!\""
     }
 };
 

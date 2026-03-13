@@ -161,3 +161,37 @@ modal.addEventListener('click', (e) => {
         document.body.style.overflow = 'auto';
     }
 });
+
+// Certificates Modal Functionality
+const certifItems = document.querySelectorAll('.certif-item');
+
+certifItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const imgSrc = item.querySelector('img').src;
+        const altText = item.querySelector('img').alt;
+
+        modalImage.src = imgSrc;
+        modalCaption.textContent = altText;
+        modal.classList.add('open');
+
+        // Prevent body scrolling when modal is open
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Salon Modal Functionality
+const salonItems = document.querySelectorAll('.salon-main-image, .salon-item');
+
+salonItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const imgSrc = item.querySelector('img').src;
+        const altText = item.querySelector('img').alt;
+
+        modalImage.src = imgSrc;
+        modalCaption.textContent = altText;
+        modal.classList.add('open');
+
+        // Prevent body scrolling when modal is open
+        document.body.style.overflow = 'hidden';
+    });
+});
