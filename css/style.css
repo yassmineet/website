@@ -1300,6 +1300,105 @@ header {
     justify-content: center;
 }
 
+/* Real Reviews Section */
+.real-reviews {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(250, 247, 248, 0.9), rgba(232, 213, 219, 0.3));
+    overflow: hidden;
+}
+
+.real-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+/* Enable masonry-like staggered visual on desktop */
+@media (min-width: 900px) {
+    .real-review-item.stagger-item {
+        transform: translateY(40px);
+    }
+}
+
+.real-review-item {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.real-review-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+
+.real-review-item.stagger-item:hover {
+    transform: translateY(30px) scale(1.02);
+}
+
+/* Instagram Header Mockup */
+.ig-message-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(232, 213, 219, 0.5);
+}
+
+.ig-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 12px;
+}
+
+.ig-info {
+    flex: 1;
+}
+
+.ig-username {
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.ig-status {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-top: 2px;
+}
+
+.ig-icon {
+    font-size: 1.2rem;
+    color: var(--primary);
+    opacity: 0.7;
+}
+
+.ig-message-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
 .author-info h4 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-dark);
